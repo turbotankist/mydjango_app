@@ -1,0 +1,210 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static "slick/slick.css" %}">
+	<link rel="stylesheet" href="{% static "slick/slick-theme.css" %}">
+	<link rel="stylesheet" href="{% static "fancybox/jquery.fancybox.min.css" %}">
+	<link rel="stylesheet" href="{% static "css/main.css" %}">
+	<link rel="stylesheet" href="{% static "css/media.css" %}">
+	<title>ВЕТМИР</title>
+</head>
+<body>
+
+<div class="header-top">
+	<div class="container">
+		<div class="header flex" id="menus">
+			<div class="logo"><a href="/"><img src="{% static "images/logo.png" %}" alt=""></a></div>
+			<div class="about menu"><a href="#page1">О ветаптеке</a></div>
+			<div class="news menu"><a href="#page2">Новости</a></div>
+			<div class="iframe" data-fancybox-type="iframe" href="https://yandex.ru/map-widget/v1/?um=constructor%3A290f544fcfd9f98e5cdbd79e3268970f4f60851c7cfd133a290b6184c43df766&amp">
+				<div class="search menu"><a>Как нас найти</a></div>
+			</div>
+		    <div class="contacts menu"><a href="#page4">Контакты</a></div>
+		</div>
+		<div class="info">
+			<div class="mobile-header">
+			<a class="mobile-icon">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+				<g>
+					<g>
+						<path d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636
+							c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M491.318,78.439H20.682C9.26,78.439,0,87.699,0,99.121c0,11.422,9.26,20.682,20.682,20.682h470.636
+							c11.423,0,20.682-9.26,20.682-20.682C512,87.699,502.741,78.439,491.318,78.439z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M491.318,392.197H20.682C9.26,392.197,0,401.456,0,412.879s9.26,20.682,20.682,20.682h470.636
+							c11.423,0,20.682-9.259,20.682-20.682S502.741,392.197,491.318,392.197z"/>
+					</g>
+				</g>
+				</svg>
+			</a>
+				<ul id="mobile-menu">
+				<li class="logo-mb">
+					<a class="mobile-icon"><img src="{% static "images/mob-menu.png" %}" alt=""></a><img src="{% static "images/mob-logo.png" %}" alt=""></li>
+				<li class="menu-mb"><a href="#page1">О ветаптеке</a></li>
+				<li class="menu-mb"><a href="#page2">Новости</a></li>
+				<li class="menu-mb"><a target="_blank" href="#map">Как нас найти</a></li>
+				<li class="menu-mb"><a href="#page4">Контакты</a></li>
+				</ul>
+			<a href="" class="mobile-logo"><img src="{% static "images/logo-mobile.png" %}" alt=""></a>
+			</div>
+			<h1 class="love">Для тех <br>кто любит <br>своих питомцев</h1>
+			<div class="info-text"><p class="">Мы   рады   предложить вам широкий спектр<br> лекарственных препаратов, зоотоваров и аксесуаров<br> для питомцев по доступным ценам.<br><br>Мы всегда готовы проконсультировать Вас по<br> вопросам лечения, профилактике болезней, а также<br> кормления и ухода за вашим питомцем.</p></div>
+		</div>
+		<div class="info-textmobile desktop"><p class="">Мы рады предложить вам широкий спектр лекарственных препаратов, зоотоваров и аксесуаров для питомцев по доступным ценам.<br><br>Мы всегда готовы проконсультировать Вас по вопросам лечения, профилактике болезней, а также кормления и ухода за вашим питомцем.</p></div>
+		</div>
+	</div>
+		<div class="info-textmobile mobile"><p class="">Мы рады предложить вам широкий спектр лекарственных препаратов, зоотоваров и аксесуаров для питомцев по доступным ценам.<br><br>Мы всегда готовы проконсультировать Вас по вопросам лечения, профилактике болезней, а также кормления и ухода за вашим питомцем.</p></div>	
+</div>
+<div class="block-about">
+	<div class="container">
+		<h3 class="choice" id="page1">
+			Выбирая нас вы не прогадаете!
+		</h3>
+		<p class="choice-text">
+			Наша ветаптека работает уже более 7 лет. За это время были спасены сотни домашних любимцев.<br>
+И множество фермеров успешно сохранили свой скот.
+		</p>
+		<ul class="choice-list">
+			<li>
+				<div class="choice-image"><img src="{% static "images/choice1.png" %}" alt=""></div>
+				<h3 class="what">Широкий выбор <br>товаров</h3>
+                <p class="some">Представленно более 500 наименований препаратов и средств ухода за животными</p>
+			</li>
+			<li>
+				<div class="choice-image"><img src="{% static "images/choice2.png" %}" alt=""></div>
+				<h3 class="what">Удобное <br>месторасположение</h3>
+                <p class="some">Мы расположены в самом центре нашего посёлка, рядом с основными трассами и торговым рынком</p>
+			</li>
+			<li>
+				<div class="choice-image"><img src="{% static "images/choice3.png" %}" alt=""></div>
+				<h3 class="what">Квалифицированный <br>персонал</h3>
+                <p class="some">Наши сотрудники всегда готовы ответить на вопросы и помочь с выбором, а при необходимости вас проконсультирует опытный ветеринар.</p>
+			</li>
+			<li>
+				<div class="choice-image"><img src="{% static "images/choice4.png" %}" alt=""></div>
+				<h3 class="what">Стабильный <br>режим работы</h3>
+                <p class="some">Наша ветаптека всегда открыта для вас с 8 утра и до 7 вечера без выходных</p>
+			</li>
+			<li>
+				<div class="choice-image"><img src="{% static "images/choice5.png" %}" alt=""></div>
+				<h3 class="what">Высококачественная <br>продукция по приемлемым <br>ценам</h3>
+                <p class="some">Все наши товары приобретаются у известных проверенных производителей препаратов и все они имеют соответствующие сертификаты.</p>
+			</li>
+			<li>
+				<div class="choice-image"><img src="{% static "images/choice6.png" %}" alt=""></div>
+				<h3 class="what">Мы всегда идём на <br>встречу нашим клиентам</h3>
+                <p class="some">Если вам необходимо большое количество какого-либо товара или что-то у нас отсутствует, вы можете просто оставить нам заявку по телефону или здесь на сайте, и мы обязательно найдём решение</p>
+			</li>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="tag-news" id="page2">Новости</div>
+		<div class="sl-mobile">
+	  		<div class="item-sl">
+	  			<div class="tag">
+		  			<img src="{% static "images/item-mb.png" %}" alt="">
+		  			<div class="tagging">
+		  				<h3 class="subtag">Заголовок</h3>
+		  				<p class="subtag-text">Compellingly leverage other's professional services whereas multifunctional quality 
+						</p>
+					</div>
+				</div>
+				<div>
+					<p class="tag-text">
+						Efficiently foster 2.0 internal or "organic" sources for superior strategic theme areas. Dynamically fabricate functional opportunities before extensive infomediaries. Credibly conceptualize robust applications whereas one-to-one total linkage. Dramatically extend resource maximizing manufactured products before standards compliant supply chains.
+					</p>
+					<br>
+					<p class="tag-text">
+						Monotonectally create cutting-edge products via intuitive methods of empowerment. Authoritatively reconceptualize one-to-one schemas rather than leading-edge partnerships. Professionally evisculate diverse strategic theme areas through market-driven.
+					</p>	
+				</div>
+	  		</div>
+
+	  	</div>
+		<div class="sl">
+			{% for post in posts %}
+	  		<div class="item-sl">
+	  			<div class="tag">
+		  			<img src="{% static "images/news1.png" %}" width="55" height="55" alt="">
+		  			<div class="tagging">
+		  				<h3 class="subtag">{{ post.title }}</h3>
+		  				<p class="subtag-text">{{ post.published_date }} 
+						</p>
+					</div>
+				</div>
+				<div>
+					<p class="tag-text">
+						{{ post.text |linebreaksbr|truncatechars_html:200 }}
+					</p>	
+				</div>
+	  		</div>
+	  		
+	  	    {% endfor %}		
+		</div>
+	</div>
+</div>
+<div class="footer" id="page4">
+	<div class="container">
+		<div class="footer-block" id="menus">
+				<a href="#page1">О ветаптеке</a>
+				<a href="#page2">Новости</a>
+				<div class="iframe" data-fancybox-type="iframe" href="https://yandex.ru/map-widget/v1/?um=constructor%3A290f544fcfd9f98e5cdbd79e3268970f4f60851c7cfd133a290b6184c43df766&amp"><a>Как нас найти</a></div>
+				<a href="#page4">Контакты</a>
+			<div class="footer-number">
+					<p class="number-text">Звоните сейчас!</p>
+					<p class="number">+7(701)000 00-00</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer-block2">
+	<div class="container">
+		<div class="details">
+			<div class="intext">
+				<p class="input-text">Подпишитесь на рассылку, чтобы получить скидку 1%!</p>
+				<form>
+					<input type="text" name="" class="getinput" placeholder="Введите свой Email-адрес"><a href=""><img class="getimg" src="{% static "images/send.png" %}" alt=""></a>
+				</form>
+			</div>
+			<div>
+				<p class="adress1">Адрес: </p>
+				<p class="adress2">040714, Алматинская область, Илийский р-он,<br> ул. Заводская 3 
+				</p>
+				<p class="adress1">Режим работы: с 9:00 до 18:00</p>
+			</div>
+		</div>
+		<div class="minimal">
+			<p class="min-text">
+				© 2018 ООО “ВЕТМИР” с любовью и заботой к вашим питомцам. Все права защищены. Любое копирвоание и <br>
+распространение с разрешения администрации. По всем вопросам обращайтесь на почту: admin@site.com
+			</p>
+			<div class="social">
+				<img src="{% static "images/vk.png" %}" alt="">
+				<img src="{% static "images/inst.png" %}" alt="" class="inst">
+			</div>
+		</div>
+		<p class="license">Лицензия ХХХХХ </p>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{% static "slick/slick.min.js" %}"></script>
+<script src="{% static "js/script.js" %}"></script>
+<script src="{% static "fancybox/jquery.fancybox.min.js" %}"></script> 
+<script src="{% static "js/yandex.map.js" %}"></script>
+
+</body>
+</html>

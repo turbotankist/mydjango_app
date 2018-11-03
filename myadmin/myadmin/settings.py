@@ -28,20 +28,25 @@ DEBUG = True
 ALLOWED_HOSTS = [
 'myaddress',
 '127.0.0.1',
-'localhost' ]
+'localhost' ,
+'192.168.88.247']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'bootstrap_admin',
+    'bootstrap4',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'landing',
+    'blog'
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -58,7 +63,9 @@ ROOT_URLCONF = 'myadmin.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+             BASE_DIR + '/templates/'
+         ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,3 +129,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    '/home/alexey/Projects/mydjango_app/myadmin/static/',
+]

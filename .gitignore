@@ -1,2 +1,5 @@
 myadmin/db.sqlite3
-myadmin/__pycache__
+*/__pycache__
+*.pyc
+*~
+myadmin/static
